@@ -11,7 +11,7 @@ export const fetchFromTMDB = async(url: URL, cacheTime?: number) => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: `Bearer ${process.env.TMDB_API_KEY}`,
+        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYTQ5ZGRhOGY4NDY3MmMyYTk5OWRmZjg3NTc0OWM0YiIsInN1YiI6IjYxMDk0YWMyNzcxOWQ3MDA1ZDllOTk1NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bQIfjdqxupAjAc55pUV4SyU2TNWXnKbT9aMRa7bB_p0`,
       },
       next: {
         revalidate: cacheTime || 60 * 60 * 24,
@@ -44,7 +44,7 @@ export const fetchFromTMDB = async(url: URL, cacheTime?: number) => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: `Bearer ${process.env.TMDB_API_KEY}`,
+        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYTQ5ZGRhOGY4NDY3MmMyYTk5OWRmZjg3NTc0OWM0YiIsInN1YiI6IjYxMDk0YWMyNzcxOWQ3MDA1ZDllOTk1NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bQIfjdqxupAjAc55pUV4SyU2TNWXnKbT9aMRa7bB_p0`,
       },
       next: {
         revalidate: 60 * 60 * 24,
